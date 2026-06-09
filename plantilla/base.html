@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importar CDN TailwindCSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Importar CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Importar CDN SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Examen - CRUD - Videojuegos</title>
+</head>
+
+<!-- Diseño de la tabla con TailwindCSS -->
+
+<body class="bg-purple-100 p-8">
+    <!-- Contenedor principal -->
+    <h2 class="text-center text-2xl italic font-semibold mb-6 text-purple-800">Listado de Videojuegos</h2>
+    <!-- Botón para agregar nuevo videojuego usando Flexbox -->
+    <div class="flex flex-row-reverse mb-4 gap-2">
+        <!-- Añadimos un botón usando la etiqueta <a>  -->
+        <a href="nuevo.php"
+            class="font-bold inline-flex items-center gap-2 bg-purple-700 text-white px-5 py-2 rounded-full shadow-md hover:bg-purple-800 hover:shadow-lg transition">
+            <i class="fas fa-plus"></i>
+            NUEVO
+        </a>
+    </div>
+    <!-- Contenedor para almacenar la tabla -->
+    <div class="overflow-x-auto">
+        <!-- Creamos una tabla -->
+        <table class="min-w-full bg-white shadow-xl rounded-xl overflow-hidden">
+            <!-- Usamos la etiqueta tabla para crear la estructura -->
+            <thead class="bg-purple-700 text-white">
+                <!-- Creamos la fila -->
+                <tr>
+                    <!-- Añadimos todos los encabezados de columna -->
+                    <th class="px-6 py-3 text-left text-sm font-semibold">ID</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Nombre</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Descripción</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Categoría</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Disponible</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Precio</th>
+                    <th class="px-6 py-3 text-center text-sm font-semibold">Acciones</th>
+                </tr>
+            </thead>
+            <!-- Cuerpo de la tabla -->
+            <tbody class="divide-y divide-purple-200">
+                <!-- Ejemplo de fila -->
+                <tr class="hover:bg-purple-50 transition">
+                    <td class="px-6 py-4 text-sm"></td>
+                    <td class="px-6 py-4 text-sm font-medium text-purple-800"></td>
+                    <td class="px-6 py-4 text-sm"></td>
+                    <td class="px-6 py-4 text-sm">
+                        <p class="text-center px-3 py-1 rounded-full bg-blue-200 text-blue-700 text-xs font-semibold">
+                        </p>
+                    </td>
+                    <td class="px-6 py-4 text-sm">
+                        <p class="text-center px-3 py-1 rounded-full bg-green-500 text-white text-xs font-semibold"></p>
+                    </td>
+                    <td class="px-6 py-4 text-sm"></td>
+                    <td class="px-6 py-4 text-center"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
