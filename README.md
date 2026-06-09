@@ -82,7 +82,7 @@ Estos valores se emplearán para: validación de categorías y disponibilidad ap
 
 En utils/validaciones.php deberán implementarse funciones de validación coherentes con el esquema de la tabla (cadenas, números, enumerados…).
 
-5. Funcionalidades obligatorias
+## 5. Funcionalidades obligatorias
 
 5.1. Listado (index.php)
 
