@@ -108,7 +108,7 @@ Debe contemplar:
 
 Recuperación del id mediante filter_input(INPUT_GET) carga de datos para precargar el formulario validaciones completas control de duplicados en nombre actualización del registro mensajes de éxito/error con SweetAlert2
 
-6. Requisitos mínimos de superación
+## 6. Requisitos mínimos de superación
 
 Para obtener una calificación igual o superior a 5, deberán funcionar correctamente las siguientes partes:listado de videojuegos creación de videojuegos eliminación de videojuegos
 
