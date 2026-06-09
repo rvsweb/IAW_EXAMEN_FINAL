@@ -60,7 +60,7 @@ CREATE TABLE videojuegos (
 );
 ```
 
-4. Ficheros utilitarios obligatorios
+## 4. Ficheros utilitarios obligatorios
 
 En utils/datos.php deberán incluirse los arrays:
 
